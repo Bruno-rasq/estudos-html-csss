@@ -1,0 +1,120 @@
+body{
+    padding: 0px;
+    margin:0px;
+}
+header {
+            background-image: -webkit-linear-gradient(bottom, #AD956D, #E9C68D);
+            background-image: -moz-linear-gradient(bottom, #AD956D, #E9C68D);
+            background-image: -o-linear-gradient(bottom, #AD956D, #E9C68D);
+            background-image: linear-gradient(to top, #AD956D, #E9C68D);
+            padding: 50px;
+            margin:0px 0px 0px 0px;
+
+}
+header > h1 {
+    text-align: center;
+    color: black;
+    font-family: Times New Roman serif;
+    font-size: 45px;
+    text-shadow: 2px 2px 0px #5E4C31;
+}
+
+header > .subtittle {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+nav{
+    margin:auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: #AD956D;
+    
+}
+nav > a {
+    text-align: center;
+    color: white;
+    background-color: #AD956D;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-left: 4px;
+    height: 40px;
+    width: 93px;
+    display: inline-block;
+    border-radius: 4px;
+    transition-duration: .5s;
+    
+}
+a:hover {
+    background-color: #E0B87B;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    min-width:300px;
+    max-width:1000px;
+}
+div > p {
+    line-height: 25px;
+    text-indent: 30px;
+    text-align: justify;
+    font-family: cursive serif;
+}
+main > article > h2 {
+    text-align: center;
+    color: black;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+main > article > aside {
+    background-color: #AD956D;
+    padding: 20px;
+    border-radius: 10px;
+}
+aside > .extra {
+    text-align: center;
+    font-family: Arial Sans-Serif;
+    color: white;
+}
+.video {
+    background-color: #FFFFD0;
+    position: relative;
+    width: 375px;
+    height: 270px;
+    margin:auto;
+    padding:10px
+    
+}
+video{
+    position: absolute;
+    height: 95%;
+    width: 95%;
+}
+abbr {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+div > p {
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+picture > img {
+    width:375px;
+    margin:auto;
+}
+.pic {
+    margin:auto;
+}
+

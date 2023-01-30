@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criação de listas </title>
+</head>
+<body>
+    <h1>listas</h1>
+    <p>é possivel criar listas atraves de tags de paragrafos,
+        mas este é uma forma meio burra de se fazer. um dos problemas
+        é que se for necessario alterar algum item, tera de alterar
+        todos os itens da lista.
+    </p>
+    <p>para isso temos a tag <mark> &lt; ol &gt; </mark></p>
+    <ol>
+        <li>io</li>
+        <li>hello</li>
+        <li>hola</li>
+        <li>hi</li>
+    </ol>
+    <p>podemos add um complemento a tag de lista ordenada identificando
+        qual o tipo de lista, numeros, letras ou simbolos e em qual termo partira o item inicial.
+        <br>
+        para isso utilizamos<mark> &lt; type="" &gt; e &lt; start="" &gt;</mark>
+    </p>
+    <p>exemplo: <mark> &lt; ol type="number" start="2" &gt;</mark>
+    </p>
+    <ol type="number" start="2">
+        <li>io</li>
+        <li>hello</li>
+        <li>hola</li>
+        <li>hi</li>  
+    </ol>
+    <h1>listas nao ordenadas</h1>
+    <p>tag <mark>&lt; ul &gt;</mark> e pode ser complementada apenas com o comando <mark> type=""</mark></p>
+    <p>exemplo; <mark> &lt; ul &gt;</mark></p>
+    <ul>
+        <li>io</li>
+        <li>hello</li>
+        <li>hola</li>
+        <li>hi</li>  
+
+    </ul>
+    <h1>lista mista </h1>
+    <p>é possivel criar listas mistas add uma tag &lt; ol &gt; dentro de uma tag de lista</p>
+
+    <h2>exemplo:</h2>
+    <ol>
+        <li>coisas que gosto:</li>
+        <ol type="I">
+            <li>musicas</li>
+            <li>programação</li>
+            <li>desenhar</li>
+            <li>musculação</li>
+        </ol>
+        <li>coisas que não gosto:</li>
+        <ol type="I">
+            <li>calculo</li>
+            <li>portugues</li>
+            <li>multidoes</li>
+        </ol>
+    </ol>
+    <h1>listas de definição</h1>
+    <p>listas de definição são utilizadas quando se quer citar uma listasde itens, como por exemplo siglas, mantendo a sigla intacta e add o significado/definição. utiliza-se as tags &lt; dt, dl, dd &gt; sendo dt para titulo, dl para a lista e dd para a definição</p>
+
+    <dt>siglas</dt>
+    <dl>HTML</dl>
+    <dd>hyper text markup language</dd>
+    <dl>CSS</dl>
+    <dd>cascading style sheets</dd>
+
+    <h1>links</h1>
+    <p>utilizam a tag &lt; a &gt;</p>
+    <a href="https://syntax.fm/"> Sintaxe podcast</a><br>
+    <a href="https://syntax.fm/" target="_blank" referrerpolicy="external">Sintaxe podcast</a>
+    <h2>texte de link interno</h2>
+    <a href="pag002.html">segunda pagina</a>
+    <h3>test</h3>
+    <a href="pag002.html" referrerpolicy="next"></a>
+</body>
+</html>
