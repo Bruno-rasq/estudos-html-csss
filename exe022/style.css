@@ -1,0 +1,62 @@
+div.quadrado {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgray;
+
+}
+
+div#q1{
+    background-color: skyblue;
+
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom, yellow, blue);
+
+}
+
+div#q3{
+    background-image: url('imagens/pattern001.png');
+
+}
+
+/*
+background-image: url();
+
+esta propriedade pode receber a url de imagens tanto internas quanto externa, com atenção que imagens externas só funcionam enquanto estiverem de pé na internet
+
+
+backgroun-size: 100px 100px:
+
+controlar o tamanho das imagens, sendo o primeiro valor width e o segundo heigth
+
+background-repeat:;
+
+controla a propriedade de repetiçaõ da imagem, por padrão o vscode repete as imagens para preencher o espaço sobrando, para cancelar essa propriedade utiliza-se "no-repeat", ou caso queira repetir para uma unica direção "repeat-y" para vertical e "repeat-x" para horizontal.
+
+*/
+
+div.block{
+    background-image: url('imagens/wallpaper003.jpg');
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+div#w1{
+    background-position: left top;
+
+}
+div#w2{
+    background-position: left center;
+
+}
+div#w3{
+    background-position: center center;
+
+}
