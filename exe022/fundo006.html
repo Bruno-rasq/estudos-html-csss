@@ -13,9 +13,10 @@
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            /*background-size: 100% 100%;
+            background-size: cover;
             
-            o primeiro 100% é a lagura e o segundo é a altura da imagem, o problema desse metodo é que ele destorce a imagem dependendo do tamanho da viewport do usuário.
+            /*atribuindo dois valores em porcentagem sendo o primeiro altura e o segundo a largura, o problema desse metodo é que ele destorce a imagem dependendo do tamanho da viewport do usuário.
+
             
             por padrão o background-size vem com o atrib "auto"
 
@@ -23,10 +24,26 @@
 
             "cover" cobre a tela inteiro mas picota a imagem para fazer caber na viewport exibindo 100% da viewport mas não exibindo 100% da imagem.
             */
+            background-attachment: fixed;
+
+            /* background-attachment é o vinculo que o corpo do site tem com a imagem, e pode recer alguns atributos; scroll e fixed;
+            
+            no scroll a imagem de fundo rola junto com o body
+            
+            no fixed a imagem de fundo fica fixa*/
+
+
+            /* shorthand - background
+
+            color > image > position > repeat > [size] > attachment;
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+            
+            */
         }
          main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -39,7 +56,7 @@
     <main>
         <h1>teste de imagem de fundo</h1>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat quae vel ratione nihil magnam voluptates aut, similique nostrum mollitia eum rerum deserunt fugit neque earum. Explicabo maiores enim quod? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta in repellendus sit sequi perferendis ut expedita optio sint quaerat, vel nihil maiores fugiat modi error, consequuntur esse odio repudiandae laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, debitis commodi! Quasi officiis modi necessitatibus vel deserunt, debitis expedita saepe mollitia veritatis impedit earum excepturi eligendi! Nulla laboriosam harum saepe?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat quae vel ratione nihil magnam voluptates aut, similique nostrum mollitia eum rerum deserunt fugit neque earum. Explicabo maiores enim quod? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta in repellendus sit sequi perferendis ut expedita optio sint quaerat, vel nihil maiores fugiat modi error, consequuntur esse odio repudiandae laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, debitis commodi! Quasi officiis modi necessitatibus vel deserunt, debitis expedita saepe mollitia veritatis impedit earum excepturi eligendi! Nulla laboriosam harum saepe? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dolores dicta eaque aut hic eum expedita amet sit veniam nobis provident quia omnis, cupiditate voluptate eligendi. Veniam consectetur fugit at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio? Doloribus sint amet repudiandae molestiae aut. In, quo unde. Facilis vel ipsa, eum reprehenderit animi eius cum pariatur optio mollitia.</p>
     </main>
     
 </body>
