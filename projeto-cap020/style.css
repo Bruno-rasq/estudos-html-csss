@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family= Sriracha & display = swap');
+
+  :root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', 'cursiva';
+    --font3: 'Sriracha', 'cursiva';
+
+  }
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,6 +23,8 @@ html, body{
     /* vh = view height, altura da tela
     vw = view width, largura da tela*/
 
+    font-family: var(--font1);
+
 }
 
 header{
@@ -21,8 +35,11 @@ header{
 }
 
 header > h1 {
+    font-family: var(--font2);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
+    /* essa config do font-size não é a melhor solução mas funciona para que o titulo do cabeçalho se adapte ao tamanho da tela*/
 }
 
 header > p {
@@ -45,6 +62,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -59,7 +78,7 @@ section.imagem {
 
 section.imagem > p{
     background-color: rgb(14, 14, 14);
-    width: 350px;
+    display: inline-block;
 }
 
 footer{
