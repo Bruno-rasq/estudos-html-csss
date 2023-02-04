@@ -13,6 +13,25 @@ table {
     background-color: darkgray;
 }
 
+.vert:hover {
+    background-color: darkgray;
+}
+
+.vert {
+    height: 50px;
+}
+.vert > td {
+    /* text-align = alinhamento horizontal
+    left- center- right*/
+    vertical-align: middle;
+    /* vertical-align = alinhamento vertical
+    top- middle- bottom*/
+}
+
+.numero {
+    text-align: right;
+}
+
 
 td {
     border: 1px solid black;
