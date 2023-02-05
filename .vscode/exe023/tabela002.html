@@ -42,6 +42,7 @@
     <!--Anatomia de tabelas grandes;
     
     TABLE
+        CAPTION
         THEAD
             tr, td, th
         TBODY
@@ -50,12 +51,18 @@
             tr, td, th -->
 
     <table>
+        <caption>População das unidades federativas.</caption>
 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width:270px ;">Estado</th>
+                <th scope="col">População</th>
             </tr>
+            <!--scope, não tras diferença visual para o site porém ajuda os mecanismos de busca do navegador a encontrar os dados do site com mais facilidade
+            
+            col para dados que se encontram na mesma coluna
+        
+            row para dados que se encontram na mesma linha-->
         </thead>
 
         <tbody>
@@ -103,7 +110,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <th><strong>147 739 985</strong></th>
             </tr>
         </tfoot>
