@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios de tabela</title>
+    <style>
+        body{
+             font-family: Arial, Helvetica, sans-serif;
+         }
+ 
+         table {
+             border-collapse: collapse;
+             width: 400px;
+         }
+         thead, tfoot{
+             background-color: rgb(133, 133, 133);
+             color: white;
+             border: 1px solid black;
+         }
+ 
+         td {
+             border: 1px solid black;
+             padding: 10px;
+             text-align: center;
+         }
+ 
+         td:hover {
+             background-color: darkgray;
+         }
+
+         col.cnome {
+            background-color: rgb(169, 221, 221);
+         }
+         col.cgrupo{
+            background-color: rgb(160, 75, 240);
+         }
+     </style>
+</head>
+<body>
+    <h1>exercicios de tabelas </h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+
+            <!-- dentro da tag colgroup deve ter a mesma quantidade de tags col que as colunas da tabela.
+            
+            podendo utilizar o atributo "span="valor""  desta forma pode-se preencher mais de uma coluna por vez-->
+
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <td scope="col">nome</td>
+            <td scope="col">sexo</td>
+            <td scope="col">idade</td>
+            <td scope="col">profissão</td>
+        </tr>
+        <tr>
+            <td>ana maria</td>
+            <td>feminino</td>
+            <td>25</td>
+            <td>jornalista</td>
+
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>masculino</td>
+            <td>23</td>
+            <td>professor</td>
+
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>feminino</td>
+            <td>50</td>
+            <td>escritora</td>
+
+        </tr>
+        <tr>
+            <td>rafael</td>
+            <td>masculino</td>
+            <td>25</td>
+            <td>cozinheiro</td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
