@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td:hover {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+
+    <p>mesclagem de dados de uma tabela;</p>
+    <p><strong>colspan</strong> = mesclagem por coluna <br>
+    <strong>rowspan</strong> = mesclagem por linha</p>
+
+    <h2>exemplo.</h2>
+    <p>deixando o dado <strong>"b"</strong> ocupando duas colunas com <strong>colspan="2"</strong></p>
+    <p><i>vale ressaltar que para mesclar um dado, tens que se excluir os dados que serão "absorvidos"</i> no caso do <strong>"b"</strong> com duas colunas, tens que se deletar o dado <strong>"c"</strong></p>
+    <table>
+        <tr>
+            <td>a</td>
+            <td colspan="2">b</td>
+            <!-- colspan faz a mesclagem do item, neste caso o td "b" ocupa duas colunas-->
+            
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+    </table>
+
+    <h2>exemplo 2.</h2>
+    <p>deixando o dado <strong>"f" </strong>ocupando 3 linhas com o <strong>rowspan="3"</strong></p>
+
+    <p>neste caso para que o <strong>"f"</strong> seja mesclado com as linhas de baixo, deve-se deletar os dados <strong>"i"</strong> e <strong>"l"</strong></p>
+
+    <table>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td rowspan="3">f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+           
+        </tr>
+    </table>
+
+    <h2>testes</h2>
+    <table>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td colspan="2">d</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td rowspan="2">i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+            
+        </tr>
+    </table>
+
+    
+
+
+</body>
+</html>
