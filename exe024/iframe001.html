@@ -9,9 +9,39 @@
 <body>
     <h1>iniciando estudos de iframe</h1>
 
+    <p><strong>iframes</strong> = <strong>i</strong>nline-<strong>frame</strong> são frames, um bloco de imagem em linha.
+        por padão um iframe possue um tamanho 300 x 150, podendo ser configurados.<p>
+
     <p>utilizando iframe para acessar um site.
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" width="450" height="250"></iframe>
+    </p>
+    <br>
+    <p>nem todo site permite uso de iframe, como youtube e outros.
+
+        e tambem ixistem algumas incompatibilidades de dispositivos, alguns smarthphones, tables e etc
+    </p>
+    <p> configuração de iframe:
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com" target="_blank">curso em video.</a>
+        </iframe>
+
+        <!--caso o dispositivo ão tenha compatibilidade com iframe, no lugar de onde ficaria o iframe é adicionado um texto, ou um link ou etc...-->
+    </p>
+    <p>dentro das configurações do iframe, caso sejam adicionados uma largura e altura, e lá no arquivo de CSS tbm sejam adicionados altura e largura, o que vai valer para o site será as atribuições feitas em css. <br>
+
+        outra atribuição que vale citar é o <strong>"scolling"</strong> o scolling permite configurar se o iframe possuirá barra de rolagem ou não.
+
+        <aside>
+            <p>
+                <strong>scolling</strong> > <strong>no</strong> = caso não queirá a barra. <br>
+
+                <strong>scolling</strong> > <strong>yes</strong> = caso queirá <br>
+
+                <strong>scolling</strong> > <strong>auto</strong> = configuração padrão, caso o site seja grande o suficiente ele terá a rolagem, caso contrario não
+            </p>
+        </aside>
     </p>
 </body>
 </html>
